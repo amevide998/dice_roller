@@ -1,27 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:dice_roller/gradient_container.dart';
 
 void main() {
   runApp(
-    MaterialApp(
+    const MaterialApp(
       home: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Colors.deepOrange, Colors.deepPurple],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-          ),
-          child: Center(
-            child: Text(
-              'THIS IS SPARTANT ',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-              ),
-            ),
-          ),
-        ),
+        body: GradientContainer(Colors.pinkAccent,Colors.deepPurple ),
       ),
     ),
   );
